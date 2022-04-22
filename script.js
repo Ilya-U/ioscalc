@@ -16,7 +16,7 @@ function result()
         document.getElementById("screen").innerHTML = "Error";
         return;
     }
-    document.getElementById("screen").innerHTML = ans;
+    document.getElementById("screen").innerHTML = ans.toFixed(8);
 }
 
 function Clear()
