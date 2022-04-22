@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <div class="calc">
+        <div class="input" id="screen">0</div>
+        <div class="strings">
+        <p class="string">
+            <button type="button" onclick="Clear()" class="button dark_gray_button">AC</button>
+            <button type="button" onclick="minus()" class="button dark_gray_button">+/-</button>
+            <button type="button" onclick="percent()" class="button dark_gray_button">%</button>
+            <button type="button" onclick="show('/')" class="button orange_button">/</button>
+        </p>
+        <p class="string">
+            <button type="button" onclick="show(7)" class="button">7</button>
+            <button type="button" onclick="show(8)" class="button">8</button>
+            <button type="button" onclick="show(9)" class="button">9</button>
+            <button type="button" onclick="show('*')" class="button orange_button">x</button>
+        </p>
+        <p class="string">
+            <button type="button" onclick="show(4)" class="button">4</button>
+            <button type="button" onclick="show(5)" class="button">5</button>
+            <button type="button" onclick="show(6)" class="button">6</button>
+            <button type="button" onclick="show('-')" class="button orange_button">-</button>
+        </p>
+        <p class="string">
+            <button type = "button" onclick="show(1)" class="button">1</button>
+            <button type = "button" onclick="show(2)" class="button">2</button>
+            <button type = "button" onclick="show(3)" class="button">3</button>
+            <button type = "button" onclick="show('+')" class="button orange_button">+</button>
+        </p>
+        <p class="string">
+            <button type="button" onclick="show(0)" class="button" style="border-bottom-left-radius: 18px; width: 200px;">0</button>
+            <button type="button" onclick="show('.')" class="button">,</button>
+            <button type="button" onclick="result()" class="button  orange_button" style="border-bottom-right-radius: 18px;">=</button>
+        </p>
+        </div>
+    </div>
+</body>
