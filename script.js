@@ -1,6 +1,6 @@
 function show(arg)
 {
-    if (document.getElementById("screen").innerHTML == 0 || document.getElementById("screen").innerHTML == "Error" || document.getElementById("screen").innerHTML == "NaN")
+    if (document.getElementById("screen").innerHTML == 0 || document.getElementById("screen").innerHTML == "Не определено" || document.getElementById("screen").innerHTML == "NaN")
     {
         document.getElementById("screen").innerHTML = arg;
         return;
@@ -8,19 +8,31 @@ function show(arg)
     document.getElementById("screen").innerHTML += arg;
 }
 
+function count(arg)
+{
+    ans = eval(arg);
+    if (ans == Infinity || ans == -Infinity || ans == NaN)
+    {
+        return "Не определено";
+    }
+
+    return ans;
+}
+
 function result()
 {
-    ans = eval(document.getElementById("screen").innerHTML);
-    if (ans == Infinity || ans == -Infinity)
+    let ans = count(document.getElementById("screen").innerHTML);
+    if (String(ans).length > 10)
     {
-        document.getElementById("screen").innerHTML = "Error";
-        return;
+        document.getElementById("screen").style.fontSize = "350%"
     }
     document.getElementById("screen").innerHTML = ans;
 }
 
 function Clear()
 {
+    if (document.getElementById("screen").style.fontSize == "350%") {document.getElementById("screen").style.fontSize = "450%"}
+    
     document.getElementById("screen").innerHTML = "0";
 }
 
