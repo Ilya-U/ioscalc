@@ -25,7 +25,7 @@
     margin: 0px;
 }
 .button{
-    background-color: #7d7b80;
+    background-color: #726e75;
     color: white;
     font-size: 230%;
     margin-top: 0px;
@@ -41,12 +41,19 @@
     margin-bottom: 0px;
 }
 
+.button:hover{
+    background-color: #aaa6ad;
+}
 .orange_button{
-    background-color: #e7a750;
+    background-color: #fd940c;
+}
+
+.orange_button:hover{
+    background-color: #c37103;
 }
 
 .dark_gray_button{
-    background-color: #615e65;
+    background-color: #5a565f;
 }
 
 .input{
@@ -60,4 +67,5 @@
     border: 0px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
+    white-space: nowrap;
 }
