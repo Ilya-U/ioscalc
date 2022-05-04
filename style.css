@@ -67,5 +67,6 @@
     border: 0px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+    word-wrap: break-word;
 }
