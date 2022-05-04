@@ -22,17 +22,23 @@ function count(arg)
 function result()
 {
     let ans = count(document.getElementById("screen").innerHTML);
-    if (String(ans).length > 10)
+    if (String(ans) == "Не определено")
     {
-        document.getElementById("screen").style.fontSize = "350%"
+        document.getElementById("screen").style.fontSize = "350%";
+    }
+    else if (String(ans).length > 10)
+    {
+        document.getElementById("screen").style.fontSize = "300%";
     }
     document.getElementById("screen").innerHTML = ans;
 }
 
 function Clear()
 {
-    if (document.getElementById("screen").style.fontSize == "350%") {document.getElementById("screen").style.fontSize = "450%"}
-    
+    if (document.getElementById("screen").style.fontSize == "350%" || document.getElementById("screen").style.fontSize == "300%") {
+        document.getElementById("screen").style.fontSize = "450%";
+    }
+
     document.getElementById("screen").innerHTML = "0";
 }
 
